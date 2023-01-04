@@ -1,0 +1,29 @@
+{
+  "name": "autoupdater",
+  "version": "1.0.0",
+  "description": "to test auto update feature",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "package": "electron-builder -p always"
+  },
+  "build": {
+    "publish": [ { "provider": "github", "owner": "vaisak0213", "repo": "autoupdater" } ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vaisak0213/autoupdater.git"
+  },
+  "author": "vaisak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vaisak0213/autoupdater/issues"
+  },
+  "homepage": "https://github.com/vaisak0213/autoupdater#readme",
+  "dependencies": {
+    "electron": "^22.0.0",
+    "electron-builder": "^23.6.0",
+    "electron-updater": "^5.3.0"
+  }
+}
